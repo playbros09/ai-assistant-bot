@@ -2,6 +2,7 @@ import asyncio
 import logging
 
 from aiogram import Bot, Dispatcher
+from src.middlewares.rate_limit import RateLimitMiddleware
 
 from src.bot.config import settings
 from src.bot.handlers import router
@@ -14,6 +15,8 @@ logging.basicConfig(
 
 dp = Dispatcher()
 dp.include_router(router)
+# Подключаем к диспетчеру сообщений
+dp.message.middleware(RateLimitMiddleware())
 
 
 async def main() -> None:
