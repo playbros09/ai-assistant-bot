@@ -1,7 +1,8 @@
 import json
 import sqlite3
-from sentence_transformers import SentenceTransformer
+
 import sqlite_vec
+from sentence_transformers import SentenceTransformer
 
 # Загружаем локальную мультиязычную модель для эмбеддингов
 model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
