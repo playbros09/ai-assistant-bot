@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-# ai-assistant-bot 
-=======
+![CI](https://github.com/playbros09/ai-assistant-bot/actions/workflows/ci.yml/badge.svg)
 # ai-assistant-bot
->>>>>>> d889842d5f969e5c54ff3eebbafc9238648d9aa4
